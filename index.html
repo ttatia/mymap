@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Gastro map</title>
+</head>
+<body>
+     <div id="map"></div>
+     <script>
+         var map = L.map('map').setView([0, 0], 1);
+
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([51.5, -0.09]).addTo(map)
+         .addTo(map)
+         .bindPopup("<h1> London </h1> <p> Fish and chips is a hot dish consisting of fried fish in batter, served with chips. The dish originated in England, where these two components had been introduced from separate immigrant cultures; it is not known who created the culinary fusion that became the emblematic British meal. Fish and chips is a common take-away food in the United Kingdom and numerous other countries, particularly in English-speaking and Commonwealth nations.</p>")
+         .openPopup();
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([41.35, 12.6]).addTo(map)
+             .addTo(map)
+             .bindPopup("<h1> Italy </h1> <p> Pasta (US: /ˈpɑːstə/, UK: /ˈpæstə/; Italian pronunciation: [ˈpasta]) is a type of food typically made from an unleavened dough of wheat flour mixed with water or eggs, and formed into sheets or other shapes, then cooked by boiling or baking. Rice flour, or legumes such as beans or lentils, are sometimes used in place of wheat flour to yield a different taste and texture, or as a gluten-free alternative. Pasta is a staple food of Italian cuisine.</p>")
+             .openPopup();
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([48.22, 31,10]).addTo(map)
+             .addTo(map)
+             .bindPopup("<h1> Ukraine </h1> <p> Borscht (English: /ˈbɔːrʃ, ˈbɔːrʃt/ is a sour soup common in Eastern Europe and Northern Asia. In English, the word \"borscht\" is most often associated with the soup's variant of Ukrainian origin, made with beetroots as one of the main ingredients, which give the dish its distinctive red color. The same name, however, is also used for a wide selection of sour-tasting soups without beetroots, such as sorrel-based green borscht, rye-based white borscht and cabbage borscht.</p>")
+             .openPopup();
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([55.75, 37.61]).addTo(map)
+             .addTo(map)
+             .bindPopup("<h1> Russia </h1> <p>Caviar (also known as caviare; from Persian: , romanized: khâvyâr, lit. 'egg-bearing') is a food consisting of salt-cured roe of the family Acipenseridae. Caviar is considered a delicacy and is eaten as a garnish or a spread. Traditionally, the term caviar refers only to roe from wild sturgeon in the Caspian Sea and Black Sea[2] (Beluga, Ossetra and Sevruga caviars). Depending on the country, caviar may also be used to describe the roe of other species of sturgeon or other fish such as salmon, steelhead, trout, lumpfish, whitefish, or carp.</p>")
+             .openPopup();
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([35.65, 139.83]).addTo(map)
+             .addTo(map)
+             .bindPopup("<h1> Japan </h1> <p>Sushi (すし, 寿司, 鮨, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a traditional Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanying a variety of ingredients (ネタ, neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is \"sushi rice\", also referred to as shari (しゃり), or sumeshi (酢飯). </p>")
+             .openPopup();
+         L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=QzVbjzEAAzl7rD9dZqgU', {
+             attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+         }).addTo(map);
+         var marker = L.marker([35.51, 104.08]).addTo(map)
+             .addTo(map)
+             .bindPopup("<h1> China </h1> <p>  Hot pot or hotpot (simplified Chinese: 火锅; traditional Chinese: 火鍋; pinyin: huǒguō; lit. 'fire pot'), also known as soup-food or steamboat, is a cooking method that originates from Mongolia, prepared with a simmering pot of soup stock at the dining table, containing a variety of East Asian foodstuffs and ingredients. </p>")
+             .openPopup();
+
+
+     </script>
+
+
+</body>
+</html>

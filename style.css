@@ -1,0 +1,18 @@
+body{
+    background-color: #71ae9a;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navigation{
+    border-style: solid;
+    color: #235f4c;
+    border-width: 2px;
+    margin: auto;
+    padding: 20px;
+}
+h1{
+    font-family: sans-serif;
+}
